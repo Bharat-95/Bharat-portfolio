@@ -45,8 +45,8 @@ const Contact = () => {
   };
 
   return (
-    <div className='flex mx-[10%] gap-6' id='Contact'>
-        <div className=' w-[40%] lg:space-y-10 space-y-8'>
+    <div className='lg:flex mx-[10%] lg:space-y-0 space-y-20  gap-6' id='Contact'>
+        <div className=' lg:w-[40%] lg:space-y-10 space-y-8'>
             <p className='lg:text-[60px] text-[20px] font-bold'>Contact Me</p>
             <div className='flex items-center lg:gap-10 gap-2 lg:text-lg text-[12px]'><FaTelegramPlane className='text-[#ff004f]' size={30}/> Bharat.nanavathula@gmail.com</div>
             <div className='flex items-center lg:gap-10 gap-2 lg:text-lg text-[12px]'><FaPhoneSquareAlt className='text-[#ff004f] ' size={30}/> +91 7993291554</div>
@@ -62,7 +62,7 @@ const Contact = () => {
 
             
         </div>
-        <div className='w-[60%]'>
+        <div className='lg:w-[60%]'>
             <form className='space-y-10 ' ref={form} onSubmit={sendEmail}>
             <input type='text' placeholder='Your Name' name='Name' className='w-[100%] h-12 rounded-lg bg-[#262626] p-4' required />
             <input type='text' placeholder='Your Email' name='Email' className='w-[100%] h-12 rounded-lg bg-[#262626] p-4' required />
